@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAADN - South African Association of Dietitians and Nutritionists</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="picture1.jpg" alt="SAADN Logo">
+                <div class="logo-text">SAADN</div>
+            </div>
+            <button class="nav-toggle">☰</button>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="committee.html">Committee</a></li>
+                    <li><a href="membership.html">Membership</a></li>
+                    <li><a href="policy.html">Policy</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+  <main class="container">
+    <section>
+      <div class="section-title">
+        <h2>Events & Workshops</h2>
+      </div>
+      <div class="vm-container">
+        <div class="vm-card">
+          <h3>Upcoming Events</h3>
+          <p>Check back soon for our calendar of events, conferences and workshops. Event registration details will be posted here.</p>
+        </div>
+
+        <div class="vm-card">
+          <h3>Past Events</h3>
+          <p>Summaries and archives of past SAADN events will be available here.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-content">
+      <p>&copy; 2025 South African Association of Dietitians and Nutritionists (SAADN).</p>
+    </div>
+  </footer>
+ <script>
+        // Mobile navigation toggle
+        document.querySelector('.nav-toggle').addEventListener('click', function() {
+            document.querySelector('nav').classList.toggle('active');
+        });
+        
+        // Close mobile nav when clicking on a link
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.querySelector('nav').classList.remove('active');
+            });
+        });
+    </script>
+</body>
+
+</html>
+</html>

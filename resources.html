@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAADN - South African Association of Dietitians and Nutritionists</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="picture1.jpg" alt="SAADN Logo">
+                <div class="logo-text">SAADN</div>
+            </div>
+            <button class="nav-toggle">☰</button>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="committee.html">Committee</a></li>
+                    <li><a href="membership.html">Membership</a></li>
+                    <li><a href="policy.html">Policy</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+  <main class="container">
+    <section>
+      <div class="section-title">
+        <h2>Resources</h2>
+      </div>
+
+      <div class="vm-container">
+        <div class="vm-card">
+          <h3>Publications & Guidelines</h3>
+          <p>Links to key research papers, national guidelines and journals related to dietetics and nutrition will be collected here.</p>
+        </div>
+
+        <div class="vm-card">
+          <h3>Educational Materials</h3>
+          <p>Resources for patient education, community programmes, and student learning.</p>
+        </div>
+      </div>
+
+      <div class="vm-card">
+        <h3>External Links</h3>
+        <ul>
+          <li><a href="https://www.hpcsa.co.za" target="_blank" rel="noopener">Health Professions Council of South Africa (HPCSA)</a></li>
+          <li><a href="https://www.who.int" target="_blank" rel="noopener">World Health Organization</a></li>
+          <li><a href="https://www.nicd.ac.za" target="_blank" rel="noopener">National Institute for Communicable Diseases (NICD)</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-content">
+      <p>&copy; 2025 South African Association of Dietitians and Nutritionists (SAADN).</p>
+    </div>
+  </footer>
+ <script>
+        // Mobile navigation toggle
+        document.querySelector('.nav-toggle').addEventListener('click', function() {
+            document.querySelector('nav').classList.toggle('active');
+        });
+        
+        // Close mobile nav when clicking on a link
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.querySelector('nav').classList.remove('active');
+            });
+        });
+    </script>
+</body>
+
+</html>
+

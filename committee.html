@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAADN - South African Association of Dietitians and Nutritionists</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="picture1.jpg" alt="SAADN Logo">
+                <div class="logo-text">SAADN</div>
+            </div>
+            <button class="nav-toggle">☰</button>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="committee.html">Committee</a></li>
+                    <li><a href="membership.html">Membership</a></li>
+                    <li><a href="policy.html">Policy</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+        <main class="container">
+        <section>
+            <div class="section-title">
+                <h2>SAADN Executive Committee (2024	6)</h2>
+            </div>
+
+                    <div class="vm-container">
+                        <div class="vm-card">
+                            <h3>Leadership</h3>
+                            <ul>
+                                <li><strong>Chairperson:</strong> Mashamba Fhulufhelo</li>
+                                <li><strong>Vice Chairperson:</strong> Baloyi Shane</li>
+                                <li><strong>Secretary:</strong> Siwahla Anele</li>
+                                <li><strong>Vice Secretary:</strong> Mampha Tebogo</li>
+                                <li><strong>General Secretary:</strong> Netshiongolwe Tovhowani Godfrey</li>
+                                <li><strong>Treasurer:</strong> Negondeni Lavhelesani</li>
+                            </ul>
+                        </div>
+
+                        <div class="vm-card">
+                            <h3>Role of the Committee</h3>
+                            <p>The Executive Committee provides strategic leadership, represents member interests, oversees advocacy and policy work, and ensures the operational running of SAADN activities and programmes for the benefit of members and the public.</p>
+                        </div>
+                    </div>
+
+                    <div class="vm-card">
+                        <h3>Contact the Committee</h3>
+                        <p>For committee inquiries please email: <a href="mailto:info@saadn.co.za">info@saadn.co.za</a></p>
+                    </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2025 South African Association of Dietitians and Nutritionists (SAADN). All rights reserved.</p>
+        </div>
+    </footer>
+ <script>
+        // Mobile navigation toggle
+        document.querySelector('.nav-toggle').addEventListener('click', function() {
+            document.querySelector('nav').classList.toggle('active');
+        });
+        
+        // Close mobile nav when clicking on a link
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.querySelector('nav').classList.remove('active');
+            });
+        });
+    </script>
+</body>
+
+</html>

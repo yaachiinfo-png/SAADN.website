@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About — SAADN</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="Picture1.jpg" alt="SAADN Logo">
+                <div class="logo-text">SAADN</div>
+            </div>
+              <button class="nav-toggle">☰</button>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="committee.html">Committee</a></li>
+                    <li><a href="membership.html">Membership</a></li>
+                    <li><a href="policy.html">Policy</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section>
+            <div class="section-title">
+                <h2>About SAADN</h2>
+            </div>
+            <div class="vm-container">
+                <div class="vm-card">
+                    <h3>History</h3>
+                    <p>Established in 2022, the South African Association for Dietitians and Nutritionists (SAADN) serves as an organisation for professionals in the field across South Africa. SAADN empowers, supports and represents its members while advocating for the nutritional well‑being of the nation. The motto of SAADN is "Voice for Dietitians, Nutritionists, and the communities."</p>
+                </div>
+                <div class="vm-card">
+                    <h3>Vision</h3>
+                    <p>To create a South Africa where individuals enjoy optimal health and well‑being through access to evidence‑based nutrition guidance, equitable food systems, and a supportive environment that promotes healthy lifestyles for all.</p>
+                </div>
+                <div class="vm-card">
+                    <h3>Mission</h3>
+                    <p>The mission of SAADN is to promote optimal nutrition for all South Africans through advocacy, education, and research. SAADN aims to enhance the nutritional well‑being of individuals and communities and to advance the profession of Dietetics and Nutrition in South Africa.</p>
+                </div>
+            </div>
+            <div class="vm-container">
+                <div class="vm-card">
+                    <h3>Values</h3>
+                    <ul>
+                        <li>Professionalism: High standards of competence and ethical conduct.</li>
+                        <li>Collaboration: Working with healthcare professionals and communities.</li>
+                        <li>Equity: Ensuring access regardless of background or location.</li>
+                        <li>Evidence‑based practice: Recommendations based on best available evidence.</li>
+                        <li>Continuous learning: Lifelong professional development.</li>
+                    </ul>
+                </div>
+                <div class="vm-card">
+                    <h3>Goals</h3>
+                    <ol class="objectives-list">
+                        <li>Promote and maintain professional integrity and ethical conduct.</li>
+                        <li>Advocate for recognition of dietetics and nutrition professions within healthcare.</li>
+                        <li>Negotiate for job creation in public health sectors and promote equitable employment.</li>
+                        <li>Promote quality education and continuous professional development (CPD).</li>
+                        <li>Play an active role in nutrition education and eradicating malnutrition in South Africa.</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2025 South African Association of Dietitians and Nutritionists (SAADN). All rights reserved.</p>
+        </div>
+    </footer>
+  <script>
+        // Mobile navigation toggle
+        document.querySelector('.nav-toggle').addEventListener('click', function() {
+            document.querySelector('nav').classList.toggle('active');
+        });
+        
+        // Close mobile nav when clicking on a link
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.querySelector('nav').classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>
